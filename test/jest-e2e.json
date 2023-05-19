@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/define/(.*)": "<rootDir>/../libs/define/src/$1",
+    "@app/define": "<rootDir>/../libs/define/src",
+    "@app/kafka/(.*)": "<rootDir>/../libs/kafka/src/$1",
+    "@app/kafka": "<rootDir>/../libs/kafka/src",
+    "@app/connect/(.*)": "<rootDir>/../libs/connect/src/$1",
+    "@app/connect": "<rootDir>/../libs/connect/src",
+    "@app/tracer/(.*)": "<rootDir>/../libs/tracer/src/$1",
+    "@app/tracer": "<rootDir>/../libs/tracer/src"
+  }
+}

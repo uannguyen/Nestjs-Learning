@@ -1,0 +1,1 @@
+export const JAEGER_DECORATOR = 'JAEGER_DECORATOR';

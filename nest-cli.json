@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "define": {
+      "type": "library",
+      "root": "libs/define",
+      "entryFile": "index",
+      "sourceRoot": "libs/define/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/define/tsconfig.lib.json"
+      }
+    },
+    "kafka": {
+      "type": "library",
+      "root": "libs/kafka",
+      "entryFile": "index",
+      "sourceRoot": "libs/kafka/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/kafka/tsconfig.lib.json"
+      }
+    },
+    "connect": {
+      "type": "library",
+      "root": "libs/connect",
+      "entryFile": "index",
+      "sourceRoot": "libs/connect/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/connect/tsconfig.lib.json"
+      }
+    },
+    "tracer": {
+      "type": "library",
+      "root": "libs/tracer",
+      "entryFile": "index",
+      "sourceRoot": "libs/tracer/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/tracer/tsconfig.lib.json"
+      }
+    }
+  }
+}
